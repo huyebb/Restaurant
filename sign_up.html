@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>skip ad</title>
+    <link rel="stylesheet" href="cssfile.css">
+	<link rel="stylesheet" href="file_footer.css">
+    <link rel="stylesheet" href="Singn.css">
+	
+</head>
+<body style="height: 2000px;">
+	<header>
+		<div id="logo">Ẩm Thức<span id="logo-s"> Đà Nẵng</span></div> 
+        <span class="sign"><a class="act" href="htmlfile.html">Trang Chủ</a></span>
+		<span class="sign"><a class="act" href="sign_up.html">SIGN UP</a></span>
+		<span class="sign"><a class="act" href="San_Pham.html">Sản Phẩm </a></span>
+
+	</header>
+
+    <article>
+        
+        <div class="container">
+            <div class="form" >
+                <form action="" onsubmit="return kiem_tra()" >
+                    <h1 style="color: #2b4e72 ;font-size: 37px;"> Đăng ký</h1>
+                    <hr>
+               
+        
+    
+                   <div class="form-group">
+                    <label for="" class="masv">Mã Sinh Viên</label> 
+                    <input type="text" name ="masv" id="masv" placeholder="" onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+                   <div class="form-group">
+                    <label for="" class="fullname">Họ Và Tên</label> 
+                    <input type="text" name ="fullname" id="fullname" placeholder=" "onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+                   <div class="form-group">
+                    <label for="" class="enail">Email</label> 
+                    <input type="text" name ="email" id="email" placeholder=""onkeyup="kiem_tra()" >
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+                   
+                                  
+                   <div class="form-group">
+                    <label for="">Giới Tính</label>
+                    <div class="boc">                 
+                        <input type="radio" name="gt" id="nam" onclick="kiem_tra()"><label for="nam"> Nam</label>
+                        <input type="radio"name="gt" id="nam" onclick="kiem_tra()"><label for="nu"> Nữ</label>
+                    </div> <!--bọc-->
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+                    <div class="form-group">
+                    <label for="" class="hobby">Sở Thích</label>
+                
+                    <div class="boc">                 
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()" > Đọc Sách
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> Du lịch
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> Âm nhạc
+                        <input type="checkbox" name="hobby" id="hobby"onclick="kiem_tra()"> Ẩm thực
+                        <input type="checkbox" name="hobby" id="hobby" onclick="hien_thi()"  > Khác
+                      
+                        <div class="hobby-defferent"  style="display:none" >
+                           
+                            <textarea name="" id="" cols="58" rows="3"placeholder="sở thích khác"></textarea>
+                        </div>
+    
+                    </div> <!--bọc-->
+                    
+                    <span class="form-massage"></span>
+                   </div> 
+    
+    
+    
+                   <div class="form-group">
+                    <label for="" class="">Quốc Tịch</label>
+                              
+                        <select name="quocTich" id="quocTich"  name="TenDanhSach">
+                            <option value="">Chọn Quốc Gia</option>
+                            <option value="1">Lào</option>
+                            <option value="2" >Việt nam</option>
+                            
+                            <option value="3">Thái Lan</option>
+                            <option value="4">Singapo</option>
+                            <option value="5">Campuchia</option>
+                            <option value="6">Angola</option>
+                            <option value="7">Japan</option>
+                            <option value="8">Koria</option>
+                            <option value="9">Hong Kong</option>
+                            <option value="10">TaiWan</option>
+                            <option value="11">Russia</option>
+                            <option value="12">Dubai</option>
+                            
+                    
+                        </select>
+                    
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+    
+    
+                   <div class="form-group">
+                    <label for="" class="ghi-chu">Ghi Chú</label>
+                    <textarea name="note" id="note" cols="20" rows="4" style="border: 1px solid #d6d6d6;" placeholder="ghi chú không quá 200 ký tự"></textarea>
+                    <span class="form-massage"></span>
+                   </div> <!--form-group-->
+                   
+                   <button class="bt-submit">Đăng ký</button>
+                   <span class="dk_thanhcong" style="display: none;"> Đăng Ký Thành Công</span>
+                   
+    
+    
+    
+                </form>
+            </div>
+          
+            
+        </div> <!-- container-->
+        <script src="sing_up.js"></script>
+	
+	</article>
+	
+ 
+	<div class="footer">
+		<div class="container">
+
+			<div class="footer-trai float-left">
+				<h3>ASSIGNMENT</h3> <span>Javascript</span>
+				<br>
+				<br>
+				<p>Tên Sv:Bùi Quang Viễn</p>
+				<p>Mã SV:PD06428</p>
+			</div>
+			<div class="footer-phai float-left">
+				<h3>
+					Liên hệ
+				</h3>
+				<br>
+				<p>Email: bvien75@gmail.com</p>
+				<p>Phone: 0774901032</p>
+	
+			</div>
+		</div>
+	</div>
+	
+<script src="jsfile.js"></script>
+</body>
+</html>
+
+
